@@ -66,7 +66,7 @@ export default function Home() {
               key={social.name}
               href={social.url}
               target="_blank"
-              className="text-white transition hover:text-blue-200"
+              className="hover:text-primary text-white transition"
             >
               {social.name}
             </Link>
