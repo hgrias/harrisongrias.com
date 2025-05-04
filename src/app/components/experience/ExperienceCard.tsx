@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { TechnologyBadge } from "./TechnologyBadge";
+import { TechnologyBadge } from "../TechnologyBadge";
 
 export interface ExperienceCardProps {
   company: string;
