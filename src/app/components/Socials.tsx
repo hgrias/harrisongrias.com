@@ -4,7 +4,7 @@ export const Socials: React.FC = () => {
   return (
     <div className="mt-8 flex space-x-6">
       <a
-        className="hover:text-muted-foreground block"
+        className="hover:text-foreground text-muted-foreground block"
         href="https://github.com/hgrias"
         target="_blank"
         rel="noreferrer noopener"
@@ -23,7 +23,7 @@ export const Socials: React.FC = () => {
         </svg>
       </a>
       <a
-        className="hover:text-muted-foreground block"
+        className="hover:text-foreground text-muted-foreground block"
         href="https://www.linkedin.com/in/harrisongrias/"
         target="_blank"
         rel="noreferrer noopener"
