@@ -1,5 +1,4 @@
 import { ArrowUpRight } from "lucide-react";
-import Link from "next/link";
 import React from "react";
 import { TechnologyBadge } from "../TechnologyBadge";
 
@@ -22,8 +21,9 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
 }) => {
   return (
     <li className="mb-12">
-      <Link
+      <a
         href={companyLink}
+        target="_blank"
         className="group relative grid grid-cols-1 gap-4 transition-all group-hover/list:opacity-50 hover:!opacity-100 sm:grid-cols-8"
       >
         <div className="lg:group-hover:bg-accent/10 absolute -inset-x-4 -inset-y-4 -z-10 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
@@ -58,7 +58,7 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
             ))}
           </ul>
         </div>
-      </Link>
+      </a>
     </li>
   );
 };
