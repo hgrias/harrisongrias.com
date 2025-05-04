@@ -1,3 +1,4 @@
+import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import { TechnologyBadge } from "../TechnologyBadge";
@@ -34,10 +35,14 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
 
         {/* Job Content */}
         <div className="sm:col-span-6">
-          <h3 className="text-foreground leading-snug font-semibold">
-            <span className="group-hover:text-primary text-foreground inline-flex items-baseline text-base leading-tight transition">
+          <h3 className="group-hover:text-primary text-foreground flex items-center gap-1 leading-snug font-semibold">
+            <span className="inline-flex items-baseline text-base leading-tight transition">
               {title} · {company}
             </span>
+            <ArrowUpRight
+              size={16}
+              className="group-hover:text-primary self-end transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
+            />
           </h3>
           <p className="mt-2 text-sm leading-normal">{description}</p>
           <ul className="mt-2 flex flex-wrap">
