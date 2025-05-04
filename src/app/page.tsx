@@ -10,7 +10,7 @@ export default function Home() {
     {
       company: "Current Company",
       title: "Senior Software Engineer",
-      period: "2022 - Present",
+      period: "2022 — Present",
       description:
         "Building scalable web applications and leading frontend initiatives.",
       technologies: ["React", "TypeScript", "Next.js"],
@@ -18,7 +18,7 @@ export default function Home() {
     {
       company: "Previous Company",
       title: "Software Engineer",
-      period: "2019 - 2022",
+      period: "2019 — 2022",
       description: "Developed and maintained complex web applications.",
       technologies: ["JavaScript", "React", "Node.js"],
     },
