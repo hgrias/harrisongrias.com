@@ -35,16 +35,21 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
 
         {/* Job Content */}
         <div className="sm:col-span-6">
-          <h3 className="group-hover:text-primary text-foreground items-center leading-snug font-semibold">
-            <span className="inline-flex items-baseline gap-1 text-base leading-tight transition">
-              {title} · {company}
-              <ArrowUpRight
-                size={16}
-                className="group-hover:text-primary inline self-end transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
-              />
+          <h3 className="group-hover:text-primary text-foreground items-center leading-snug font-medium">
+            <span>
+              {title} ·{" "}
+              <span className="inline-block">
+                {company}
+                <ArrowUpRight
+                  size={16}
+                  className="group-hover:text-primary ml-1 inline-block h-4 w-4 shrink-0 translate-y-px self-end transition-transform group-hover:translate-x-1 group-hover:-translate-y-1 group-hover/link:translate-x-1 group-hover/link:-translate-y-1 group-focus-visible/link:translate-x-1 group-focus-visible/link:-translate-y-1 motion-reduce:transition-none"
+                />
+              </span>
             </span>
           </h3>
-          <p className="mt-2 text-sm leading-normal">{description}</p>
+          <p className="text-muted-foreground mt-2 text-sm leading-normal">
+            {description}
+          </p>
           <ul className="mt-2 flex flex-wrap">
             {technologies.map((tech, techIndex) => (
               <li key={techIndex} className="mt-2 mr-1.5">
