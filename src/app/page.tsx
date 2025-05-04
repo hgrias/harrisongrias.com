@@ -61,13 +61,13 @@ export default function Home() {
       description:
         "A comprehensive web application solving real-world problems.",
       technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
-      githubLink: "#",
+      link: "#",
     },
     {
       name: "Project 2",
       description: "An innovative tool to improve developer productivity.",
       technologies: ["React", "GraphQL", "Prisma"],
-      githubLink: "#",
+      link: "#",
     },
   ];
 
