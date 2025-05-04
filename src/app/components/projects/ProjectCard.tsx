@@ -35,16 +35,18 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 
         {/* Project Content */}
         <div className="sm:col-span-6">
-          <h3 className="text-foreground flex items-center gap-1 leading-snug font-semibold">
-            <span className="group-hover:text-primary text-foreground inline-flex items-baseline text-base leading-tight transition">
+          <h3 className="group-hover:text-primary text-foreground items-center leading-snug font-medium">
+            <span>
               {name}
+              <ArrowUpRight
+                size={16}
+                className="group-hover:text-primary ml-1 inline-block h-4 w-4 shrink-0 translate-y-px self-end transition-transform group-hover:translate-x-1 group-hover:-translate-y-1 group-hover/link:translate-x-1 group-hover/link:-translate-y-1 group-focus-visible/link:translate-x-1 group-focus-visible/link:-translate-y-1 motion-reduce:transition-none"
+              />
             </span>
-            <ArrowUpRight
-              size={16}
-              className="group-hover:text-primary self-end transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
-            />
           </h3>
-          <p className="mt-2 text-sm leading-normal">{description}</p>
+          <p className="text-muted-foreground mt-2 text-sm leading-normal">
+            {description}
+          </p>
           <ul className="mt-2 flex flex-wrap">
             {technologies.map((tech, techIndex) => (
               <li key={techIndex} className="mt-2 mr-1.5">
