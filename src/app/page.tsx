@@ -20,8 +20,8 @@ export default function Home() {
     },
     {
       company: "Discover Financial Services",
-      title: "Senior Software Engineer",
-      period: "2022 — Present",
+      title: "Senior Software Engineer, ML Operations",
+      period: "June 2023 — Present",
       description:
         "Designing and developing a robust ML platform infrastructure, enabling efficient model training, deployment, and monitoring across diverse financial applications.",
       technologies: ["Python", "Kubernetes", "Argo Workflows", "ML Ops"],
