@@ -9,7 +9,7 @@ export interface ExperienceCardProps {
   period: string;
   description: string;
   technologies: string[];
-  companyLink?: string;
+  link?: string;
 }
 
 export const ExperienceCard: React.FC<ExperienceCardProps> = ({
@@ -18,7 +18,7 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
   period,
   description,
   technologies,
-  companyLink = "#",
+  link: companyLink = "#",
 }) => {
   return (
     <li className="mb-12">
