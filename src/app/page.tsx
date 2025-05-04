@@ -13,7 +13,7 @@ export default function Home() {
     {
       company: "NomosLearning",
       title: "Founder & Lead Developer",
-      period: "2023 — Present",
+      period: "Aug 2024 — Present",
       description:
         "Developing an AI-powered learning platform that provides law students with intelligent study tools and personalized resources.",
       technologies: ["Next.js", "TypeScript", "React", "Postgres", "tRPC"],
