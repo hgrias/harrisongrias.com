@@ -1,13 +1,15 @@
 import { ArrowUpRight } from "lucide-react";
-import Link from "next/link";
 import React from "react";
 import { TechnologyBadge } from "../TechnologyBadge";
+
+import Image from "next/image";
 
 export interface ProjectCardProps {
   name: string;
   description: string;
   technologies: string[];
   link: string;
+  imageSrc?: string;
 }
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -15,22 +17,37 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   description,
   technologies,
   link,
+  imageSrc,
 }) => {
   return (
     <li className="mb-12">
-      <Link
+      <a
         href={link}
+        target="_blank"
         className="group relative grid grid-cols-1 gap-4 transition-all group-hover/list:opacity-50 hover:!opacity-100 sm:grid-cols-8"
       >
         <div className="lg:group-hover:bg-accent/10 absolute -inset-x-4 -inset-y-4 -z-10 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
 
         {/* Project Image */}
         <header className="flex justify-center sm:col-span-2">
-          <div className="aspect-video w-full overflow-hidden rounded-lg bg-gray-200 dark:bg-gray-700">
-            <div className="flex h-full w-full items-center justify-center text-gray-500 dark:text-gray-400">
-              Project Image
+          {imageSrc ? (
+            <div className="relative aspect-video w-full overflow-hidden rounded-lg">
+              <Image
+                src={imageSrc}
+                alt={`${name} project screenshot`}
+                fill
+                objectFit="cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                className="object-cover"
+              />
             </div>
-          </div>
+          ) : (
+            <div className="bg-accent aspect-video w-full overflow-hidden rounded-lg">
+              <div className="text-muted-foreground flex h-full w-full items-center justify-center">
+                Project Image
+              </div>
+            </div>
+          )}
         </header>
 
         {/* Project Content */}
@@ -55,7 +72,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             ))}
           </ul>
         </div>
-      </Link>
+      </a>
     </li>
   );
 };

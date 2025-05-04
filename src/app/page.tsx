@@ -53,17 +53,26 @@ export default function Home() {
 
   const projects = [
     {
-      name: "Project 1",
-      description:
-        "A comprehensive web application solving real-world problems.",
-      technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
-      link: "#",
+      name: "NomosLearning",
+      description: "AI-powered learning platform for law students.",
+      technologies: ["Next.js", "Typescript", "React", "Postgres"],
+      link: "https://www.nomoslearning.com/",
+      imageSrc: "/projects/nomos.png",
     },
     {
-      name: "Project 2",
-      description: "An innovative tool to improve developer productivity.",
-      technologies: ["React", "GraphQL", "Prisma"],
-      link: "#",
+      name: "harrisongrias.com",
+      description: "You're currently here. Click me to out the source code.",
+      technologies: ["Next.js", "Typescript", "React"],
+      link: "https://github.com/hgrias/harrisongrias.com",
+      imageSrc: "/projects/harrison.png",
+    },
+    {
+      name: "hardcoreepoxyflooringdetroit.com",
+      description:
+        "Marketing website for a business in the floor coatings industry.",
+      technologies: ["Astro", "Typescript", "React"],
+      link: "https://www.hardcoreepoxyflooringdetroit.com/",
+      imageSrc: "/projects/hardcoreepoxy.png",
     },
   ];
 
