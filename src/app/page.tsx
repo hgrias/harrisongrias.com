@@ -113,7 +113,7 @@ export default function Home() {
                 <li key={index} className="mb-12">
                   <Link
                     href={job.company}
-                    className="block group relative grid grid-cols-1 sm:grid-cols-8 gap-4 transition-all hover:!opacity-100 group-hover/list:opacity-50"
+                    className="group relative grid grid-cols-1 sm:grid-cols-8 gap-4 transition-all hover:!opacity-100 group-hover/list:opacity-50"
                   >
                     <div className="absolute -inset-x-4 -inset-y-4 -z-10 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
                     <header className="text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
