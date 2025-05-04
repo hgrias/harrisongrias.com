@@ -11,19 +11,43 @@ export default function Home() {
 
   const experience = [
     {
-      company: "Current Company",
+      company: "NomosLearning",
+      title: "Founder & Lead Developer",
+      period: "2023 — Present",
+      description:
+        "Developing an AI-powered learning platform that provides law students with intelligent study tools and personalized resources.",
+      technologies: ["Next.js", "TypeScript", "React", "Postgres", "tRPC"],
+    },
+    {
+      company: "Discover Financial Services",
       title: "Senior Software Engineer",
       period: "2022 — Present",
       description:
-        "Building scalable web applications and leading frontend initiatives.",
-      technologies: ["React", "TypeScript", "Next.js"],
+        "Designing and developing a robust ML platform infrastructure, enabling efficient model training, deployment, and monitoring across diverse financial applications.",
+      technologies: ["Python", "Kubernetes", "Argo Workflows", "ML Ops"],
     },
     {
-      company: "Previous Company",
+      company: "Leaf Trade",
       title: "Software Engineer",
-      period: "2019 — 2022",
-      description: "Developed and maintained complex web applications.",
-      technologies: ["JavaScript", "React", "Node.js"],
+      period: "Sep 2022 — Mar 2023",
+      description:
+        "Developed full stack features for a B2B cannabis marketplace, optimizing product ordering, implementing analytics logging, and migrating local development to Kubernetes.",
+      technologies: [
+        "Python",
+        "Django",
+        "Typescript",
+        "React",
+        "Postgres",
+        "AWS",
+      ],
+    },
+    {
+      company: "Publicis Sapient",
+      title: "Software Engineer",
+      period: "Feb 2020 — Sep 2022",
+      description:
+        "Built data visualization tools and automated Airflow ETL pipelines to help ad ops teams analyze customer insights. Deployed secure, scalable infrastructure on AWS and GCP for client workflow testing and deployment.",
+      technologies: ["Python", "Kubernetes", "Data Engineering", "AWS", "GCP"],
     },
   ];
 
