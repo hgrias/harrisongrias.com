@@ -54,7 +54,7 @@ export default function Home() {
           <h2 className="text-foreground mt-3 text-lg font-medium tracking-tight sm:text-xl">
             Full Stack Software Engineer
           </h2>
-          <p className="mt-4 max-w-xs leading-normal">
+          <p className="text-foreground/80 mt-4 max-w-xs leading-normal">
             Crafting elegant, performant web experiences that solve real-world
             problems.
           </p>
@@ -66,7 +66,7 @@ export default function Home() {
               key={social.name}
               href={social.url}
               target="_blank"
-              className="hover:text-primary text-white transition"
+              className="hover:text-primary text-foreground transition"
             >
               {social.name}
             </Link>
