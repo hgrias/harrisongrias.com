@@ -11,16 +11,26 @@ export const AboutSection: React.FC = () => {
           About
         </h2>
       </div>
-      <p className="mb-4">
-        I&apos;m a passionate software engineer with a focus on building
-        innovative, user-centric web applications. With expertise in modern web
-        technologies, I transform complex problems into elegant, efficient
-        solutions.
-      </p>
-      <p>
-        My approach combines technical excellence with creative problem-solving,
-        ensuring that every project not only meets but exceeds expectations.
-      </p>
+      <div className="text-foreground/90 space-y-4">
+        <p>
+          I&apos;m a fullstack software engineer who loves building immersive,
+          scalable web experiences. With a broad range of skills and hands-on
+          experience across the stack, I enjoy working closely with users to
+          iterate quickly and solve tough problems, no matter the industry.
+        </p>
+        <p>
+          Over the years, I&apos;ve developed software for a wide range of
+          organizations—from scrappy startups and ad agencies to large,
+          established companies. Lately, I&apos;ve been building products from
+          the ground up: talking to users, identifying real problems, and moving
+          fast to solve them.
+        </p>
+        <p>
+          Outside of developing software, you&apos;ll usually find me biking
+          around Chicago, playing soccer, diving into a video game, or checking
+          out new restaurants with my partner.
+        </p>
+      </div>
     </section>
   );
 };
