@@ -86,7 +86,9 @@ export const Navigation = () => {
         {NAV_ITEMS.map((item) => (
           <li key={item.id}>
             <a
-              ref={(el) => (navRefs.current[item.id] = el)}
+              ref={(el) => {
+                navRefs.current[item.id] = el;
+              }}
               className={`group flex items-center py-2 pl-4 text-xs font-bold tracking-widest uppercase transition-colors ${
                 activeSection === item.id
                   ? "text-foreground"
