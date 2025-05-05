@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Harrison Grias - Personal Portfolio
 
-## Getting Started
+Hi! Welcome to my portfolio site.
 
-First, run the development server:
+## 🚀 Technologies & Frameworks
 
+### Core Technologies
+- **Next.js 14**: React framework for server-side rendering and static site generation
+- **React**: JavaScript library for building user interfaces
+- **TypeScript**: Typed superset of JavaScript
+- **Tailwind CSS**: Utility-first CSS framework
+
+### Key Libraries & Tools
+- **Framer Motion**: Animation and interactive UI components
+- **Intersection Observer API**: Smooth scrolling and section tracking
+- **React Hooks**: State management and side effects
+
+## 🎨 Design Philosophy
+
+### Inspiration
+This portfolio draws significant design inspiration from [Brittany Chiang's portfolio](https://brittanychiang.com/), particularly in:
+- Minimalist, dark-themed design
+- Smooth, interactive navigation
+- Emphasis on typography and layout
+
+### Custom Design Elements
+- Typewriter effect for dynamic headline
+- Smooth scroll navigation
+- Responsive layout with detailed attention to spacing and typography
+
+## 🌟 Key Features
+
+### Interactive Components
+- Smooth scrolling navigation
+- Typewriter effect for dynamic descriptions
+- Hover and active state animations
+- Responsive design across devices
+
+### Performance Optimizations
+- Server-side rendering with Next.js
+- Minimal external dependencies
+- Optimized font loading
+- Efficient state management
+
+## 🔧 Local Development
+
+### Prerequisites
+- Node.js (v18+)
+- npm or yarn
+
+### Setup
 ```bash
+git clone https://github.com/hgrias/harrisongrias.com.git hgrias-portfolio
+
+cd hgrias-portfolio
+
+npm install
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📦 Deployment
+Deployed on Vercel with automatic CI/CD integration
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📝 License
+MIT License
