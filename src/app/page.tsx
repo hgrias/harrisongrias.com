@@ -3,6 +3,7 @@ import { projects } from "@/data/projects";
 import Link from "next/link";
 import { AboutSection } from "./components/about/AboutSection";
 import { ExperienceSection } from "./components/experience/ExperienceSection";
+import { Navigation } from "./components/Navigation";
 import { ProjectSection } from "./components/projects/ProjectSection";
 import { Socials } from "./components/Socials";
 
@@ -22,6 +23,8 @@ export default function Home() {
             Crafting elegant, performant web experiences that solve real-world
             problems.
           </p>
+
+          <Navigation />
         </div>
 
         <Socials />
