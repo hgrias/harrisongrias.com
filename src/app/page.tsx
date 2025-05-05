@@ -35,8 +35,7 @@ export default function Home() {
             />
           </h2>
           <p className="text-foreground/80 mt-4 max-w-xs leading-normal">
-            Crafting elegant, performant web experiences that solve real-world
-            problems.
+            I create platforms that solve real-world problems.
           </p>
 
           <Navigation />
