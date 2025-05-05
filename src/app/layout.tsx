@@ -13,6 +13,28 @@ export const metadata: Metadata = {
   title: "Harrison Grias",
   description:
     "Harrison Grias – Full Stack Engineer skilled creating immersive and scalable web experiences. View projects, experience, and contact info.",
+  openGraph: {
+    type: "website",
+    url: "http://harrisongrias.com/",
+    title: "Harrison Grias",
+    description:
+      "Full Stack Engineer skilled creating immersive and scalable web experiences. View projects, experience, and contact info.",
+    images: [
+      {
+        url: "http://harrisongrias.com/openGraphImage.png",
+        width: 1200,
+        height: 630,
+        alt: "Harrison Grias Portfolio Site Meta Image",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Harrison Grias",
+    description:
+      "Full Stack Engineer skilled creating immersive and scalable web experiences. View projects, experience, and contact info.",
+    images: ["http://harrisongrias.com/openGraphImage.png"],
+  },
 };
 
 export default function RootLayout({
