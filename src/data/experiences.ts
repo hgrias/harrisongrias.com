@@ -13,7 +13,7 @@ export const experiences = [
     title: "Senior Software Engineer, ML Operations",
     period: "June 2023 — Present",
     description:
-      "Designing and developing a robust ML platform infrastructure, enabling efficient model training, deployment, and monitoring across diverse financial applications.",
+      "Designing and developing robust ML platform infrastructure, enabling efficient model training, deployment, and monitoring across diverse financial applications.",
     technologies: ["Python", "Kubernetes", "Argo Workflows", "ML Ops"],
     link: "https://www.discover.com/",
   },
