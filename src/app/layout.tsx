@@ -22,6 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang={`${roboto.variable} en scroll-smooth`}>
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body
         className={`text-foreground bg-background selection:text-primary min-h-screen w-full font-sans leading-relaxed antialiased selection:bg-yellow-200/10`}
       >
