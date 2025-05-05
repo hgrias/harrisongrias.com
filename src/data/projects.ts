@@ -12,7 +12,7 @@ export const projects = [
       "You're currently here. Click me to check out the source code.",
     technologies: ["Next.js", "Typescript", "React"],
     link: "https://github.com/hgrias/harrisongrias.com",
-    imageSrc: "/projects/harrison.png",
+    imageSrc: "/openGraphImage.png",
   },
   {
     name: "hardcoreepoxyflooringdetroit.com",
