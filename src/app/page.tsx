@@ -1,3 +1,5 @@
+import { experiences } from "@/data/experiences";
+import { projects } from "@/data/projects";
 import Link from "next/link";
 import { AboutSection } from "./components/about/AboutSection";
 import { ExperienceSection } from "./components/experience/ExperienceSection";
@@ -5,78 +7,6 @@ import { ProjectSection } from "./components/projects/ProjectSection";
 import { Socials } from "./components/Socials";
 
 export default function Home() {
-  const experience = [
-    {
-      company: "NomosLearning",
-      title: "Founder & Lead Developer",
-      period: "Aug 2024 — Present",
-      description:
-        "Developing an AI-powered learning platform that provides law students with intelligent study tools and personalized resources.",
-      technologies: ["Next.js", "TypeScript", "React", "Postgres", "tRPC"],
-      link: "https://www.nomoslearning.com/",
-    },
-    {
-      company: "Discover Financial Services",
-      title: "Senior Software Engineer, ML Operations",
-      period: "June 2023 — Present",
-      description:
-        "Designing and developing a robust ML platform infrastructure, enabling efficient model training, deployment, and monitoring across diverse financial applications.",
-      technologies: ["Python", "Kubernetes", "Argo Workflows", "ML Ops"],
-      link: "https://www.discover.com/",
-    },
-    {
-      company: "Leaf Trade",
-      title: "Software Engineer",
-      period: "Sep 2022 — Mar 2023",
-      description:
-        "Developed full stack features for a B2B cannabis marketplace, optimizing product ordering, implementing analytics logging, and migrating local development to Kubernetes.",
-      technologies: [
-        "Python",
-        "Django",
-        "Typescript",
-        "React",
-        "Postgres",
-        "AWS",
-      ],
-      link: "https://leaf.trade/",
-    },
-    {
-      company: "Publicis Sapient",
-      title: "Software Engineer",
-      period: "Feb 2020 — Sep 2022",
-      description:
-        "Built data visualization tools and automated Airflow ETL pipelines to help ad ops teams analyze customer insights. Deployed secure, scalable infrastructure on AWS and GCP for client workflow testing and deployment.",
-      technologies: ["Python", "Kubernetes", "Data Engineering", "AWS", "GCP"],
-      link: "https://www.publicissapient.com/",
-    },
-  ];
-
-  const projects = [
-    {
-      name: "NomosLearning",
-      description: "AI-powered learning platform for law students.",
-      technologies: ["Next.js", "Typescript", "React", "Postgres"],
-      link: "https://www.nomoslearning.com/",
-      imageSrc: "/projects/nomos.png",
-    },
-    {
-      name: "harrisongrias.com",
-      description:
-        "You're currently here. Click me to check out the source code.",
-      technologies: ["Next.js", "Typescript", "React"],
-      link: "https://github.com/hgrias/harrisongrias.com",
-      imageSrc: "/projects/harrison.png",
-    },
-    {
-      name: "hardcoreepoxyflooringdetroit.com",
-      description:
-        "Marketing website for a business in the floor coatings industry.",
-      technologies: ["Astro", "Typescript", "React"],
-      link: "https://www.hardcoreepoxyflooringdetroit.com/",
-      imageSrc: "/projects/hardcoreepoxy.png",
-    },
-  ];
-
   return (
     <div className="mx-auto flex min-h-screen max-w-screen-xl flex-col px-6 py-12 font-sans md:flex-row md:px-12 md:py-16 lg:py-0">
       {/* Left Sidebar */}
@@ -101,7 +31,7 @@ export default function Home() {
       <main id="content" className="pt-24 lg:w-[52%] lg:py-24">
         <AboutSection />
 
-        <ExperienceSection experiences={experience} />
+        <ExperienceSection experiences={experiences} />
 
         <ProjectSection projects={projects} />
       </main>
