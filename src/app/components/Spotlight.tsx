@@ -8,8 +8,21 @@ export const Spotlight: React.FC = () => {
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
-      setPosition({ x: e.clientX, y: e.clientY });
+      setPosition({
+        x: e.clientX + window.scrollX,
+        y: e.clientY + window.scrollY,
+      });
       setOpacity(1);
+    };
+
+    const handleScroll = () => {
+      const mouseEvent = window.event as MouseEvent;
+      if (mouseEvent) {
+        setPosition({
+          x: mouseEvent.clientX + window.scrollX,
+          y: mouseEvent.clientY + window.scrollY,
+        });
+      }
     };
 
     const handleMouseLeave = () => {
@@ -17,10 +30,12 @@ export const Spotlight: React.FC = () => {
     };
 
     window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("scroll", handleScroll);
     window.addEventListener("mouseleave", handleMouseLeave);
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("mouseleave", handleMouseLeave);
     };
   }, []);

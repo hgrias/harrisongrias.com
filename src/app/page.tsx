@@ -61,7 +61,8 @@ export default function Home() {
     },
     {
       name: "harrisongrias.com",
-      description: "You're currently here. Click me to out the source code.",
+      description:
+        "You're currently here. Click me to check out the source code.",
       technologies: ["Next.js", "Typescript", "React"],
       link: "https://github.com/hgrias/harrisongrias.com",
       imageSrc: "/projects/harrison.png",
@@ -77,7 +78,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="flex min-h-screen flex-col md:flex-row">
+    <div className="mx-auto flex min-h-screen max-w-screen-xl flex-col px-6 py-12 font-sans md:flex-row md:px-12 md:py-16 lg:py-0">
       {/* Left Sidebar */}
       <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[48%] lg:flex-col lg:justify-between lg:py-24">
         <div>

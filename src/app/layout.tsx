@@ -24,12 +24,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} text-foreground bg-background selection:text-primary mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans leading-relaxed antialiased selection:bg-yellow-200/10 md:px-12 md:py-16 lg:py-0`}
+        className={`${geistSans.variable} ${geistMono.variable} text-foreground bg-background selection:text-primary min-h-screen w-full font-sans leading-relaxed antialiased selection:bg-yellow-200/10`}
       >
-        <Spotlight />
-        {children}
+        <div className="__variable_20b187 group/spotlight relative">
+          <Spotlight />
+          {children}
+        </div>
       </body>
     </html>
   );
