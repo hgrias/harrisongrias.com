@@ -14,7 +14,7 @@
   --color-primary: var(--primary);
   --color-accent: var(--accent);
   --color-muted-foreground: var(--muted-foreground);
-  --font-sans: var(--font-inter);
+  --font-sans: var(--font-roboto);
   --font-mono: var(--font-roboto-mono);
 }
 
