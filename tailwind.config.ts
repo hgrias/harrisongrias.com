@@ -14,6 +14,9 @@ const config: Config = {
         foreground: "var(--foreground)",
         accent: "var(--accent)",
       },
+      fontFamily: {
+        sans: ["var(--font-sans)", "system-ui", "sans-serif"],
+      },
     },
   },
   plugins: [],
