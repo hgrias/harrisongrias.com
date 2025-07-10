@@ -1,5 +1,14 @@
 export const experiences = [
   {
+    company: "Sprout Social",
+    title: "Senior Software Engineer",
+    period: "July 2025 — Present",
+    description:
+      "Building the next generation of innovative social media management tools.",
+    technologies: ["Java", "Python", "Kubernetes"],
+    link: "https://sproutsocial.com/",
+  },
+  {
     company: "NomosLearning",
     title: "Founder & Lead Developer",
     period: "Aug 2024 — Present",
@@ -11,9 +20,9 @@ export const experiences = [
   {
     company: "Discover Financial Services",
     title: "Senior Software Engineer, ML Operations",
-    period: "Jun 2023 — Present",
+    period: "Jun 2023 — July 2025",
     description:
-      "Designing and developing robust ML platform infrastructure, enabling efficient model training, deployment, and monitoring across diverse financial applications.",
+      "Led development of robust ML platform infrastructure, enabling efficient model training, deployment, and monitoring across diverse financial applications.",
     technologies: ["Python", "Kubernetes", "Argo Workflows", "ML Ops"],
     link: "https://www.discover.com/",
   },
