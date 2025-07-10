@@ -11,7 +11,6 @@ import { TypewriterEffect } from "./components/TypewriterEffect";
 export default function Home() {
   const descriptivePhrases = [
     "Full Stack Software Engineer",
-    "Aspiring Designer",
     "Cat Lover",
     "Video Game Enthusiast",
     "Full Stack Software Engineer",
